@@ -8,20 +8,21 @@ body{
     background: #080808;
     color: #fff;
 }
+
  #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(shruti\ garden.jpg);
+    height: 101vh;
+    background-image: url(images/shruti\ garden.jpg);
     background-size: 65vh;
     background-color: black;
     background-position: center;
     background-repeat: no-repeat; 
-    border-radius: 7%;
+    border-radius: 8%;
     border-style: solid;
     border-color: #f7f390;
 }
 .container{
-    padding: 30px 30px;
+    padding: 30px 32px;
 }
 nav{
     display: flex;
@@ -53,7 +54,7 @@ nav ul li a::after{
     position: absolute;
     left:0;
     bottom:-6px;
-    transition: 0.7s;
+    transition: 0.8s;
 
 }
 nav ul li a:hover::after{
@@ -61,10 +62,10 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 23px;
 }
 .header-text h1 span{
-    font: size 59px;;
+    font: size 58px;
     color: #d8ba0b;
 }
 .header-text h1{
@@ -120,10 +121,11 @@ nav ul li a:hover::after{
     bottom: -2px;
     transition: 0.9s;
 }
+
 .tab-links.active-link::after{
     width: 50%;
 }
-.tab-contents ul li{
+.tabcontents ul li{
     list-style: none;
     margin: 10px 0;
 
@@ -135,6 +137,73 @@ nav ul li a:hover::after{
 .tab-contents{
     display: none;
 }
-.tab-contents.active tab{
+
+.tabcontents.active-tab{
     display: block;
+}
+/*-------------assignments-------------*/
+#assignments{
+    padding: 30px 0;
+}
+.assignment-list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      grid-gap: 40px;
+      margin-top: 50px; 
+}
+.assignment-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: linear 0.5s,transform 0.5s;
+    
+
+    
+}
+.assignment-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+.assignment-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.assignment-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.assignment-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/*------------final projects----------*/
+#final projects{
+    paddind: 50px 0;
+}
+.project-list{
+    display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      grid-gap: 40px;
+      margin-top: 50px; 
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.project img{
+    width: 100% ;
+    border-radius: 11px;
+    display: block;
+}
+.project:hover img{
+    transform: scale(1.1);
 }
