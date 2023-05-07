@@ -142,7 +142,7 @@ nav ul li a:hover::after{
     display: block;
 }
 /*-------------assignments-------------*/
-.assignments{
+#assignments{
     padding: 30px 0;
 }
 .assignment-list{
@@ -173,11 +173,11 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
-    margin-top: 50px;
-    display: flex;
+    margin-top: 20px;
+    display: inline-block;
 }
 .assignment-list div:hover{
-    background: #d8ba0b;
+    background: #ff004f;
     transform: translateY(-10px);
 }
 /*------------final projects----------*/
