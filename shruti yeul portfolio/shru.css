@@ -40,7 +40,7 @@ nav{
 }
 nav ul li{
     flex: 50px;
-    margin-left: 50px;
+    margin-left: 49px;
     display: flex;
     list-style: georgian;
     margin: 10px 10px;
